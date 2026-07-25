@@ -1,0 +1,9 @@
+[submodule "libraries/eigen"]
+	path = libraries/eigen
+	url = git@github.com:PX4/eigen.git
+[submodule "libraries/mavlink"]
+	path = libraries/mavlink
+	url = git@github.com:mavlink/mavlink.git
+[submodule "libraries/googletest"]
+	path = libraries/googletest
+	url = git@github.com:google/googletest.git
