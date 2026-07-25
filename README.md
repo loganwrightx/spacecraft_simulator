@@ -3,10 +3,23 @@
 This repository is a realistic physics engine for all types of rocket vehicles launching from earth's surface. The intent of building and maintaining this project is to demonstrate/strengthen my computational abilities and to provide an in-house solution for simulation and modeling of custom rockets. Physical accuracy is of utmost importance. To support flight software development, the goal is to also provide an interface for avionics to communicate with the simulation in real-time to provide realistic analysis of behavior in-flight.
 
 ## Table of Contents
+- [Example Plots](#example-plots)
 - [Code Structure](#code-structure)
 - [Setting Up the Environment](#setting-up-the-environment)
 - [Active Features List](#active-features-list)
 - [About Me](#about-me)
+
+## Example Plots
+
+Here are a couple samples from a basic simulation that I ran for a model rocket using an Estes E12-6 black powder motor:
+
+![Altitude Plot](assets/05_altitude_vs_time.png)
+
+![ECEF Position Plot](assets/01_ecef_position_vs_time.png)
+
+![Dynamic Pressure Plot](assets/09_dynamic_pressure_vs_time.png)
+
+![Atmospheric Conditions Plot](assets/08_density_pressure_temperature_vs_time.png)
 
 ## Code Structure
 
