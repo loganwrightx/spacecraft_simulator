@@ -31,6 +31,8 @@ I develop on a Macbook Pro using homebrew for package management. The compiler e
 | Aerodynamic modeling | Implement aerodynamic forces over body surfaces including lift, drag, and grid fins | To-Do |
 | Thrust modeling | Interpolate multi-dimensional thrust tables for custom engine types | To-Do |
 | Custom thrust vector mounts | Allow user to define how actuator inputs map to unit-thrust-vectors | To-Do |
+| Ethernet UDP interface for HIL | Allow communication between the simulation and avionics systems | To-Do |
+| Real-time processing | Run the simulation timed against a real clock and zero-latency feedback loop with HIL | To-Do |
 
 ## About Me
 
