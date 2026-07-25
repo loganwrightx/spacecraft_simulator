@@ -8,10 +8,12 @@ This repository is a realistic physics engine for all types of rocket vehicles l
 - [Setting Up the Environment](#setting-up-the-environment)
 - [Active Features List](#active-features-list)
 - [About Me](#about-me)
+- [Gallery](#gallery)
+  - [Satellite Orbiting Earth](#satellite-orbiting-earth)
 
 ## Example Plots
 
-Here are a couple samples from a basic simulation that I ran for a model rocket using an Estes E12-6 black powder motor:
+Here are a couple samples from a basic simulation that I ran for a model rocket using an Estes E12-6 black powder motor launched from LLA coordinates $\langle \phi=0.00000, \lambda=0.0000, h=0.0 \rangle$:
 
 ![Altitude Plot](assets/05_altitude_vs_time.png)
 
@@ -52,3 +54,13 @@ I develop on a Macbook Pro using homebrew for package management. The compiler e
 I'm a software engineer with a degree in physics and a deep passion for anything that can fly. I'm experienced in embedded systems, hardware-in-the-loop testing, and numerical modeling. I have ~3 years of experience modeling complex physical systems and am well-versed in Python and C/C++ programming languages.
 
 The purpose of this project is to demonstrate my understanding of rocket dynamics, earth-based navigation, and numerical modeling. This project goes hand-in-hand with a model rocket program that I'm currently working on in parallel. When `SpacecraftSimulator` reaches a deployable state, it will be usable for HIL testing for various rocket profiles. I will especially be performing extensive tests against my flight systems prior to launch for control-parameter and trajectory tuning.
+
+## Gallery
+
+This is just a fun collection of cool simulations that I've run to test everything - I'll be adding more as they come.
+
+### Satellite Orbiting Earth
+
+![Satellite Orbiting Earth Plot](gallery/satellite_orbit/07_trajectory_3d_ecef.png)
+
+![Satellite ECEF Plot](gallery/satellite_orbit/01_ecef_position_vs_time.png)
