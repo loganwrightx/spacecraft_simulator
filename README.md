@@ -64,3 +64,9 @@ This is just a fun collection of cool simulations that I've run to test everythi
 ![Satellite Orbiting Earth Plot](gallery/satellite_orbit/07_trajectory_3d_ecef.png)
 
 ![Satellite ECEF Plot](gallery/satellite_orbit/01_ecef_position_vs_time.png)
+
+## Grok Support
+
+I'm using Grok-build to support development of the python script used for plotting _only_. This is my personal session that I'm keeping in context for the project.
+
+`grok --resume 019f987d-f285-7061-95c3-0c1db89f32cb`
