@@ -6,10 +6,12 @@ This repository is a realistic physics engine for all types of rocket vehicles l
 - [Example Plots](#example-plots)
 - [Code Structure](#code-structure)
 - [Setting Up the Environment](#setting-up-the-environment)
+- [Configuring Simulation Settings](#configuring-simulation-settings)
 - [Active Features List](#active-features-list)
 - [About Me](#about-me)
 - [Gallery](#gallery)
   - [Satellite Orbiting Earth](#satellite-orbiting-earth)
+- [Grok Support](#grok-support)
 
 ## Example Plots
 
@@ -34,6 +36,24 @@ The philosophy for this project is to use the best-suited programming pattern an
 ## Setting Up the Environment
 
 I develop on a Macbook Pro using homebrew for package management. The compiler expects the user to have installed `g++-13`. The `configure_environment.sh` script is designed to build the environment you'll need to replicate my processes and use the tools natively.
+
+## Configuring Simulation Settings
+
+The settings are modifiable by directly changing the source code right now - a future improvement will allow configuration files to be dynamically loaded at runtime but that's not available just yet. For now, navigate to the `source/` folder and follow the commentary notes in `main.cpp` _and_ `settings.cpp`. Detailed instructions are laid out about where to inject your system modifications and what should be left alone.
+
+**NOTE:** Everything is simplified in the model of a rocket right now, but there's still a lot of value in the results of the simulations. The gravitation model is EGM84 combined with an empirical formula for gravity at low altitudes which is very high fidelity for a large altitude domain on earth. The simulator also takes into account rotating-frame effects (coriolis and centrifugal forces). As a natural consequence, the atmosphere is assumed to rotate uniformly with the earth, so rotating-frame effects also impact drag force terms - that's _very_ realistic with low-wind scenarios.
+
+Some areas that weaken the grade of fidelity right now include:
+
+- The aerodynamic interactions
+  - Missing body _and_ lift forces
+  - Missing force coefficient tables that depend on angle of attack and mach number
+- Thrust curve model
+  - Missing non-linear curves, ignition delay, and random variability around mean behavior
+- Thrust vector model
+  - Missing latency-integration _and_ actuation rate limits
+
+A comprehensive list of the items that result in "missed opportunity for accuracy" will not be provided  – the feature history, over time, will serve as a reasonable replacement.
 
 ## Active Features List
 
@@ -67,6 +87,6 @@ This is just a fun collection of cool simulations that I've run to test everythi
 
 ## Grok Support
 
-I'm using Grok-build to support development of the python script used for plotting _only_. This is my personal session that I'm keeping in context for the project.
+For support with quick deployment of data analysis tools, Grok is handling most of the python tooling by my guidance. This section is purely here for _me only_ to keep track of the session I'm using to build the python data analysis apps. For my personal record, here's the session ID needed to continue where I left off:
 
 `grok --resume 019f987d-f285-7061-95c3-0c1db89f32cb`
