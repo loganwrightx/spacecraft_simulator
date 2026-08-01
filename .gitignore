@@ -11,5 +11,4 @@ build/
 sim.csv
 debug.txt
 
-spacesim
-
+spacecraft_simulator
