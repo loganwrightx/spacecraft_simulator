@@ -88,5 +88,3 @@ This is just a fun collection of cool simulations that I've run to test everythi
 ## Grok Support
 
 For support with quick deployment of data analysis tools, Grok is handling most of the python tooling by my guidance. This section is purely here for _me only_ to keep track of the session I'm using to build the python data analysis apps. For my personal record, here's the session ID needed to continue where I left off:
-
-`grok --resume 019f987d-f285-7061-95c3-0c1db89f32cb`
