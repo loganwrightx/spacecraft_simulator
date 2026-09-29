@@ -69,15 +69,9 @@ A comprehensive list of the items that result in "missed opportunity for accurac
 | Ethernet UDP interface for HIL | Allow communication between the simulation and avionics systems | To-Do |
 | Real-time processing | Run the simulation timed against a real clock and zero-latency feedback loop with HIL | To-Do |
 
-## About Me
-
-I'm a software engineer with a degree in physics and a deep passion for anything that can fly. I'm experienced in embedded systems, hardware-in-the-loop testing, and numerical modeling. I have ~3 years of experience modeling complex physical systems and am well-versed in Python and C/C++ programming languages.
-
-The purpose of this project is to demonstrate my understanding of rocket dynamics, earth-based navigation, and numerical modeling. This project goes hand-in-hand with a model rocket program that I'm currently working on in parallel. When `SpacecraftSimulator` reaches a deployable state, it will be usable for HIL testing for various rocket profiles. I will especially be performing extensive tests against my flight systems prior to launch for control-parameter and trajectory tuning.
-
 ## Gallery
 
-This is just a fun collection of cool simulations that I've run to test everything - I'll be adding more as they come.
+This is a small collection of other simulations that I've run to test everything so far.
 
 ### Satellite Orbiting Earth
 
