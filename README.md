@@ -57,15 +57,21 @@ A comprehensive list of the items that result in "missed opportunity for accurac
 
 | Name | Capabilities | Status |
 | ---- | ------------ | ------ |
-| WGS84 Model | Conversion between LLA and ECEF coordinate systems | Implemented |
+| WGS84 ellipsoid model | Conversion between LLA and ECEF coordinate systems | Implemented |
+| EGM84 gravity model | Realistic spherical harmonic implementation of earth's gravity model | Implemented |
 | Rotating reference frame (earth) | Adds Coriolis and Centrifugal non-inertial forces | Implemented |
+| Variable mass |
 | Body-frame attitude tracking | Use body-frame angular rates to integrate attitude over time with a quaternion | Implemented |
+| Interpolation routines for single and dual-dimensional arrays | Will be used for various empirical data tables in the sim | To-Do |
 | Aerodynamic coefficients tables | Interpolate multi-dimensional datasets for aerodynamic coefficients as functions of speed and angle of attack | To-Do |
-| Aerodynamic modeling | Implement aerodynamic forces over body surfaces including lift, drag, and grid fins | To-Do |
-| Thrust modeling | Interpolate multi-dimensional thrust tables for custom engine types | To-Do |
+| Aerodynamic force modeling | Implement aerodynamic forces over body surfaces including lift, drag, and grid fins | To-Do |
+| Thrust modeling | Interpolate thrust tables for custom engine types and thrust curves | To-Do |
 | Custom thrust vector mounts | Allow user to define how actuator inputs map to unit-thrust-vectors | To-Do |
-| Ethernet UDP interface for HIL | Allow communication between the simulation and avionics systems | To-Do |
+| Ethernet UDP 250 Hz interface for HIL | Allow communication between the simulation and avionics systems | To-Do |
+| HIL and vehicle-capable system protocol | Support telemetry transmission between avionics and sim host machine | To-Do |
 | Real-time processing | Run the simulation timed against a real clock and zero-latency feedback loop with HIL | To-Do |
+| Monte-Carlo noise for sensor readings | Add normally distributed random variables to sensor bias for realistic sensor readings | To-Do |
+| Noisy readings test cases | Write GoogleTest tests to validate noise quality and realism | To-Do |
 
 ## Gallery
 
