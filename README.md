@@ -8,10 +8,8 @@ This repository is a realistic physics engine for all types of rocket vehicles l
 - [Setting Up the Environment](#setting-up-the-environment)
 - [Configuring Simulation Settings](#configuring-simulation-settings)
 - [Active Features List](#active-features-list)
-- [About Me](#about-me)
 - [Gallery](#gallery)
   - [Satellite Orbiting Earth](#satellite-orbiting-earth)
-- [Grok Support](#grok-support)
 
 ## Example Plots
 
